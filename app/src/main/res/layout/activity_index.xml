@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_pushMessage_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="@string/activity_index_pushMessageActivity" />
+
+            <EditText
+                android:id="@+id/et_pushMessage_etExplain"
+                style="@style/et_w_m_h_w" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_pushMessage"
+                    style="@style/btn_startActivity"
+                    android:text="开启消息推送Activity" />
+
+                <Button
+                    android:id="@+id/btn_pushMessage_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_translucence_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="@string/activity_index_translucenceActivity" />
+
+            <EditText
+                android:id="@+id/et_translucence_etExplain"
+                style="@style/et_w_m_h_w" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_translucenceActivity"
+                    style="@style/btn_startActivity"
+                    android:text="开启半透明Activity" />
+
+                <Button
+                    android:id="@+id/btn_translucenceActivity_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_slidemenu_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="@string/activity_index_slideMenuActivity" />
+
+            <EditText
+                android:id="@+id/et_slidemenu_etExplain"
+                style="@style/et_w_m_h_w" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_slideMenu"
+                    style="@style/btn_startActivity"
+                    android:text="引导页面" />
+
+                <Button
+                    android:id="@+id/btn_slideMenu_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_rwSDCard_explain"
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_rwSDCard_etExplain"
+                style="@style/et_w_m_h_w"
+                android:visibility="gone" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_rwSDCard"
+                    style="@style/btn_startActivity"
+                    android:text="读写sd卡外部存储上的文件（不是手机上的文件）" />
+
+                <Button
+                    android:id="@+id/btn_rwSDCard_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_SDPathBrowse_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="对应自己的手机：手机内置sd(即外部存储路径):/storage/emulated/0  \nSD卡：/storage/sdcard1/.搜索时 程序异常，需要重写simpleAdapter."
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/et_SDPathBrowse_etExplain"
+                style="@style/et_w_m_h_w"
+                android:visibility="gone" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_SDPathBrowse"
+                    style="@style/btn_startActivity"
+                    android:text="SD卡文件浏览器" />
+
+                <Button
+                    android:id="@+id/btn_SDPathBrowse_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_SDPathBrowse1_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="增加搜索功能(searchView).数据填充换用MyAdapter."
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/et_SDPathBrowse1_etExplain"
+                style="@style/et_w_m_h_w"
+                android:visibility="gone" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_SDPathBrowse1"
+                    style="@style/btn_startActivity"
+                    android:text="SD卡文件浏览器1" />
+
+                <Button
+                    android:id="@+id/btn_SDPathBrowse1_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_searchView_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="为listview设置arrayadapter.有两种方式实现数据的搜索--在onQueryTextChange（）里实现"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/et_searchView_etExplain"
+                style="@style/et_w_m_h_w"
+                android:visibility="gone" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_searchView"
+                    style="@style/btn_startActivity"
+                    android:text="searchView.网上例子" />
+
+                <Button
+                    android:id="@+id/btn_searchView_sure"
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_combSearchView_explain"
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_combSearchView"
+                style="@style/btn_startActivity"
+                android:text="组合基本控件实现搜索" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                android:id="@+id/tv_listview_explain"
+                style="@style/tv_w_m_h_w"
+                android:text="各种listview"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_listview"
+                style="@style/btn_startActivity"
+                android:text="listview总结" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="后期加上滑动切换界面的效果"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_fragmenttabhost"
+                style="@style/btn_startActivity"
+                android:text="fragmenttabhost" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_dialog"
+                style="@style/btn_startActivity"
+                android:text="dialog" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_popwindow"
+                style="@style/btn_startActivity"
+                android:text="popWindow" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_quitApp"
+                style="@style/btn_startActivity"
+                android:text="quitApp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="集合数据没显示出来，之后整理"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_deviceInfo_index"
+                style="@style/btn_startActivity"
+                android:text="获取设备信息" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="显示各种特效view"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_anyView_index"
+                style="@style/btn_startActivity"
+                android:text="showView" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="对象转换为json,或者由json转换对象"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_json_index"
+                style="@style/btn_startActivity"
+                android:text="json转换模块" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="android瀑布流"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_waterfall_index"
+                style="@style/btn_startActivity"
+                android:text="android瀑布流模块" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="各种时间工具:年月日，时分秒，和秒，各种时间格式的相互的转换"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_timeUtil_index"
+                style="@style/btn_startActivity"
+                android:text="时间工具" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_spinner"
+                style="@style/btn_startActivity"
+                android:text="下拉列表" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_showGif"
+                style="@style/btn_startActivity"
+                android:text="显示gif" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_webView_index"
+                style="@style/btn_startActivity"
+                android:text="显示webView_index" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_loadAnimation"
+                style="@style/btn_startActivity"
+                android:text="loadAnimation:加载动画" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="gridview 和gridLayout不同.gridview和listview相似"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_girdview"
+                style="@style/btn_startActivity"
+                android:text="gridview 布局" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_viewpagerFragment"
+                style="@style/btn_startActivity"
+                android:text="gridview 布局" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#00000000" />
+
+
+    </LinearLayout>
+
+</ScrollView>

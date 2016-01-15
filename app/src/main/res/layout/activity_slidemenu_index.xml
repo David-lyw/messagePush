@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:text="ViewPager是一个可以支持手势来切换View的控件,很适合来做用户引导的页面." />
+
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text="viewPager.每个显示的界面加载的是xml。《用于收集所有的xml布局》" />
+
+            <EditText
+                style="@style/et_w_m_h_w"
+                android:visibility="gone" />
+
+            <LinearLayout style="@style/index_llayout_llayout">
+
+                <Button
+                    android:id="@+id/btn_upload_xml"
+                    style="@style/btn_startActivity"
+                    android:text="加载xml的滑动界面" />
+
+                <Button
+                    style="@style/btn_sure"
+                    android:text="保存编辑内容"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/index_llayout">
+
+                <TextView
+                    style="@style/tv_w_m_h_w"
+                    android:text="viewPager.每个显示的界面加载的是一个aitivity。" />
+
+                <EditText
+                    style="@style/et_w_m_h_w"
+                    android:visibility="gone" />
+
+                <LinearLayout style="@style/index_llayout_llayout">
+
+                    <Button
+                        android:id="@+id/btn_upload_activity"
+                        style="@style/btn_startActivity"
+                        android:text="加载Activity的滑动界面" />
+
+                    <Button
+                        style="@style/btn_sure"
+                        android:text="保存编辑内容"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/index_llayout">
+
+                <TextView
+                    style="@style/tv_w_m_h_w"
+                    android:text="viewPager.每个显示的界面加载的是一张img." />
+
+
+                <LinearLayout style="@style/index_llayout_llayout">
+
+                    <Button
+                        android:id="@+id/btn_upload_img"
+                        style="@style/btn_startActivity"
+                        android:text="加载img的滑动界面" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/index_llayout">
+
+                <TextView
+                    style="@style/tv_w_m_h_w"
+                    android:text="viewPager.每个显示的界面加载的是一个activity." />
+
+                <Button
+                    android:id="@+id/btn_upload_activity2"
+                    style="@style/btn_startActivity"
+                    android:text="加载Activity的滑动界面2" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/index_llayout">
+
+                <TextView style="@style/tv_w_m_h_w"
+                    android:text="以上的是滑动界面，这个才叫侧滑菜单"/>
+
+                <Button
+                    android:id="@+id/btn_slideMenu"
+                    style="@style/btn_startActivity"
+                    android:text="slideMenu" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/index_llayout">
+
+                <TextView style="@style/tv_w_m_h_w"
+                    android:text="优酷Menu"/>
+
+                <Button
+                    android:id="@+id/btn_youkuMenu"
+                    style="@style/btn_startActivity"
+                    android:text="优酷Menu" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/index_llayout">
+
+                <TextView style="@style/tv_w_m_h_w" />
+
+                <Button
+                    style="@style/btn_startActivity"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

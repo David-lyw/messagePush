@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text=""
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_dialog_1"
+            style="@style/btn_startActivity"
+            android:text="dialog-继承dialog" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text="实际是弹出一个popwindow"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_dialog_2"
+            style="@style/btn_startActivity"
+            android:text="dialog2-自定义" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text="自定义弹出框：点击弹出框中的编辑框弹出软键盘。"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_dialog_3"
+            style="@style/btn_startActivity"
+            android:text="dialog3-dialog里可以有带编辑框的方法" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyw="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/tifa_lockhart"
+    tools:context=".activity_showView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#11000000">
+
+
+            <com.anyView.FocusedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="欲买桂花同载酒，终不似，少年游。......................................"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_timo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.2"
+                android:src="@mipmap/timomengzhu" />
+
+            <ImageView
+                android:id="@+id/iv_timo1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.4"
+                android:src="@mipmap/timomengzhu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:alpha="0.3"
+            android:orientation="vertical">
+
+            <com.anyView.SettingItemView
+                android:id="@+id/togglebtn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                lyw:itbackground="first"
+                lyw:mtitle="自定义控件" />
+
+            <com.anyView.SettingItemView
+                android:id="@+id/togglebtn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                lyw:itbackground="last"
+                lyw:mtitle="让开关隐藏"
+                lyw:toggleEnable="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_timo2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/timomengzhu" />
+
+            <ImageView
+                android:id="@+id/iv_timo3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/timomengzhu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_wenya4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:src="@mipmap/lvwenya" />
+
+            <ImageView
+                android:id="@+id/iv_wenya5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.4"
+                android:src="@mipmap/lvwenya1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_wangdigua6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:src="@mipmap/wangdigua" />
+
+            <ImageView
+                android:id="@+id/iv_img7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.4"
+                android:src="@mipmap/img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_qq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:src="@mipmap/qq1" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_qq9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:alpha="0.4"
+                android:src="@mipmap/qq1" />
+        </RelativeLayout>
+
+
+        <com.anyView.MyToggleButton
+            android:id="@+id/myToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:alpha="0.3"
+            lyw:slide_background="@mipmap/slide_background2"
+            lyw:slide_icon="@mipmap/slide_icon2"
+            lyw:state="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:visibility="visible" />
+
+        <Button
+            style="@style/btn_startActivity"
+            android:text="时间工具" />
+    </LinearLayout>
+</LinearLayout>

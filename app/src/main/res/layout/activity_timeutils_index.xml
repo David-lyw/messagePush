@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="时间选择器弹出框只实现了日期选择功能，时间选择器仅仅是显示出来"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        style="@style/index_llayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_setTime0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#22000000"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="点击设置时间"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_recover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="清空内容"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:visibility="visible" />
+
+        <Button
+            style="@style/btn_startActivity"
+            android:text="" />
+    </LinearLayout>
+
+
+</LinearLayout>

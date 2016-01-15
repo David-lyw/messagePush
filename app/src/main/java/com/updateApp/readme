@@ -1,0 +1,7 @@
+测试代码：
+UpdateManager manager = new UpdateManager(MainTwoActivity.this);
+// 检查软件更新
+manager.checkUpdate();
+
+
+注：只需要把version.xml放到网上服务器去，更新版本时，到服务器把版本号和url修改一下就可以

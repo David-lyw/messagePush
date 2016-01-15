@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_startService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="beginServices"
+        android:text="startServices"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_stopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="stopServices"
+        android:text="stopServices"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_bindService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="bindService"
+        android:text="bindService"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_unBindService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="unBindService"
+        android:text="unBindService"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="pushMsg"
+        android:text="本activity消息推送"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_cleanAllNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="cleanAllNotification"
+        android:text="清除所有通知"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="sendMessage"
+        android:text="单独向服务器发送消息"
+        android:textSize="20sp" />
+
+</LinearLayout>

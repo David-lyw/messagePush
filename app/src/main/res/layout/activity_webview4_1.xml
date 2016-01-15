@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/allinterface_title_rl">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/allinterface_title_iv_left" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:text="按时间分"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/btn_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:text="按项目分"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/btn_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="按部门分"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <View
+                    android:id="@+id/underline_time"
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="7dp"
+                    android:background="#fff" />
+                <View
+                    android:id="@+id/underline_project"
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff" />
+                <View
+                    android:id="@+id/underline_department"
+                    android:layout_width="70dp"
+                    android:layout_height="1dp"
+                    android:background="#fff" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#f2f2f2f2"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/sv_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/shape_bg_search"
+            android:queryHint="搜索"
+            tools:ignore="NewApi" />
+    </LinearLayout>
+
+
+    <com.listview.PinnedHeaderExpandableListView
+        android:id="@+id/explistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0.0dip"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:groupIndicator="@null"
+        android:scrollbars="vertical"
+        android:scrollingCache="true" />
+
+
+</LinearLayout>

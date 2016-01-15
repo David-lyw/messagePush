@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingItemView">
+
+        <!-- 显示不同的title内容 -->
+        <attr name="mtitle" format="string" />
+
+        <!-- 背景的设置 -->
+        <attr name="itbackground">
+            <enum name="first" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="last" value="2" />
+        </attr>
+
+        <!-- 开关是否可见 -->
+        <attr name="toggleEnable" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+
+    <!--reference:引用-->
+    <declare-styleable name="MyToggleButton">
+        <attr name="slide_background" format="reference" />
+        <attr name="slide_icon" format="reference" />
+        <attr name="state" format="boolean" />
+    </declare-styleable>
+
+</resources>

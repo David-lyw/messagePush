@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- FragmentTabHost中的标签部分 -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></TabWidget>
+            <!-- FragmentTabHost中的内容部分 -->
+            <!-- 旧的TabHost控件需要一个叫做tabcontent的FrameLayout控件作为标签内容部分，可是在FragmentTabHost中不再需要这个FrameLayout -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"></FrameLayout>
+
+            <!-- FragmentTabHost真正的标签内容部分 -->
+            <FrameLayout
+                android:id="@+id/realTabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></FrameLayout>
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@mipmap/tab_widget_background"
+        android:checkedButton="@+id/rbtn_mainpage"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_mainpage"
+            style="@style/radiobutton_menuitem_style"
+            android:drawableTop="@mipmap/tab_icon1"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/rbtn_about"
+            style="@style/radiobutton_menuitem_style"
+            android:drawableTop="@mipmap/tab_icon2"
+            android:text="关于" />
+
+        <RadioButton
+            android:id="@+id/rbtn_setting"
+            style="@style/radiobutton_menuitem_style"
+            android:drawableTop="@mipmap/tab_icon3"
+            android:text="设置" />
+
+        <RadioButton
+            android:id="@+id/rbtn_search"
+            style="@style/radiobutton_menuitem_style"
+            android:drawableTop="@mipmap/tab_icon4"
+            android:text="搜索" />
+
+        <RadioButton
+            android:id="@+id/rbtn_more"
+            style="@style/radiobutton_menuitem_style"
+            android:drawableTop="@mipmap/tab_icon5"
+            android:text="更多" />
+    </RadioGroup>
+
+</LinearLayout>

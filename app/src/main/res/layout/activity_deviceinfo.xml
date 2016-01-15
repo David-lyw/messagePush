@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text=""
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_getInfo"
+            style="@style/btn_startActivity"
+            android:text="点击显示所有数据" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="电话状态:" />
+
+                <TextView
+                    android:id="@+id/tv_callState"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="唯一的设备ID:" />
+
+                <TextView
+                    android:id="@+id/tv_imei"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="设备的软件版本号:" />
+
+                <TextView
+                    android:id="@+id/tv_softwareVersion"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="手机号:" />
+
+                <TextView
+                    android:id="@+id/tv_phonenumber"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="国际长途区号:" />
+
+                <TextView
+                    android:id="@+id/tv_netCountryIso"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="MCC+MNC:" />
+
+                <TextView
+                    android:id="@+id/tv_mccNcc"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="current registered operator:" />
+
+                <TextView
+                    android:id="@+id/tv_operatorName"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="当前使用的网络类型:" />
+
+                <TextView
+                    android:id="@+id/tv_typeNet"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="手机类型:" />
+
+                <TextView
+                    android:id="@+id/tv_typePhone"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="ISO国家码:" />
+
+                <TextView
+                    android:id="@+id/tv_simCountryIso"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="SIM卡提供的移动国家码和移动网络码:" />
+
+                <TextView
+                    android:id="@+id/tv_simOperator"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="服务商名称:" />
+
+                <TextView
+                    android:id="@+id/tv_simOperatorName"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="SIM卡的序列号:" />
+
+                <TextView
+                    android:id="@+id/tv_simSerialNumber"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="SIM的状态信息:" />
+
+                <TextView
+                    android:id="@+id/tv_simState"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="唯一的用户ID:" />
+
+                <TextView
+                    android:id="@+id/tv_subscriberId"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="取得和语音邮件相关的标签:" />
+
+                <TextView
+                    android:id="@+id/tv_voiceMailAlphaTag"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="获取语音邮件号码:" />
+
+                <TextView
+                    android:id="@+id/tv_voiceMailNumber"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="ICC卡是否存在   :" />
+
+                <TextView
+                    android:id="@+id/tv_iccCard"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="是否漫游:" />
+
+                <TextView
+                    android:id="@+id/tv_netWorkRoaming"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="changeDTMFtoneLength:" />
+
+                <TextView
+                    android:id="@+id/tv_canChangeDtmfToneLength"
+                    style="@style/devices_tv_content"
+                    android:text="4444444444444" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/devices_ll"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="Pseudo-Unique ID.通过取出ROM版本、制造商、CPU型号、以及其他硬件信息来实现:" />
+
+                <TextView
+                    android:id="@+id/tv_Pseudo_Unique"
+                    style="@style/devices_tv_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="The Android ID:" />
+
+                <TextView
+                    android:id="@+id/tv_The_Android_ID"
+                    style="@style/devices_tv_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="The_Wlan_Mac_Address:" />
+
+                <TextView
+                    android:id="@+id/tv_The_Wlan_Mac_Address"
+                    style="@style/devices_tv_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="The_The_BT_MAC_Address:" />
+
+                <TextView
+                    android:id="@+id/tv_The_BT_MAC_Address"
+                    style="@style/devices_tv_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/devices_ll">
+
+                <TextView
+                    style="@style/devices_tv_title"
+                    android:text="Combined_Device_ID:32位的16进制数据:" />
+
+                <TextView
+                    android:id="@+id/tv_Combined_Device_ID"
+                    style="@style/devices_tv_content"
+                    android:text="" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

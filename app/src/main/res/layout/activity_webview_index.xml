@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text="百度首页"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_webViewDetail"
+            style="@style/btn_startActivity"
+            android:text="webView显示" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text="sedin的一个界面:党支部书记例会"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_webViewDetail1"
+            style="@style/btn_startActivity"
+            android:text="webView显示" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text="sedin的一个接口返回的原json数据"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_webViewDetail2"
+            style="@style/btn_startActivity"
+            android:text="webView显示" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text="sedin的一个接口返回的json数据，并根据数据布局"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_webViewDetail4"
+            style="@style/btn_startActivity"
+            android:text="gridview显示数据" />
+    </LinearLayout>
+
+</LinearLayout>

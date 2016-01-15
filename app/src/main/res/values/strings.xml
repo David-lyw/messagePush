@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">messagePush</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="activity_index_pushMessageActivity">消息推送：本地activity推送，通过服务推送。点：后台服务，消息推送，与服务器通信，sp存储此textview上的数据。</string>
+    <string name="activity_index_translucenceActivity">开启一个半透明的activity。点：此textView上的数据存储到（文件）中。</string>
+    <string name="activity_index_slideMenuActivity">左右滑动引导页面。有对应的dot标志点和文本说明。《里面放置收集的各种xml界面》</string>
+    <string name="tv_pinnedHeadExpandableListview_explain">仿QQ好友列表：头部悬浮.onGroupClick方法中parent.setSelectedGroup(groupPosition)这句代码的作用是点击分组置顶,需要可以解开注释.</string>
+</resources>

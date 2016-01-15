@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/drawable_bg"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:text="此textView背景为一个drawable，四个角不能分别设置角度，API的bug.解决方法为设置两层(item),用第二层的直角盖住第一层的不需要显示的圆角部分"/>
+
+</LinearLayout>

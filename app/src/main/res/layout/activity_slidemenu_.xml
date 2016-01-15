@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.slidemenu.SlidingMenu
+        android:id="@+id/slidingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 菜单，在容器中的索引是0 -->
+        <include layout="@layout/activity_slidemenu_menu" />
+
+        <!-- 主界面，在容器中的索引是1 -->
+        <include layout="@layout/activity_slidemenu_main" />
+
+    </com.slidemenu.SlidingMenu>
+
+</RelativeLayout>
