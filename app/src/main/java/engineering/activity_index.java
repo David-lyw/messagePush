@@ -23,6 +23,7 @@ import com.anyView.activity_gridview;
 import com.anyView.activity_loadAnimation;
 import com.anyView.activity_showGif;
 import com.anyView.activity_showView;
+import com.anyView.activity_touchImageView_index;
 import com.common.ScreenManager;
 import com.deviceInfromation.activity_deviceInfo;
 import com.dialog.activity_dialog_index;
@@ -89,6 +90,7 @@ public class activity_index extends Activity implements OnClickListener {
     Button btn_loadAnimation;
     Button btn_girdview;
     Button btn_viewpagerFragment;
+    Button btn_touchImageView;
 
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
@@ -191,7 +193,8 @@ public class activity_index extends Activity implements OnClickListener {
         btn_webView_index = (Button) findViewById(R.id.btn_webView_index);
         btn_loadAnimation = (Button) findViewById(R.id.btn_loadAnimation);
         btn_girdview = (Button) findViewById(R.id.btn_girdview);
-        btn_viewpagerFragment= (Button) findViewById(R.id.btn_viewpagerFragment);
+        btn_viewpagerFragment = (Button) findViewById(R.id.btn_viewpagerFragment);
+        btn_touchImageView = (Button) findViewById(R.id.btn_touchImageView);
 
 
     }
@@ -235,6 +238,7 @@ public class activity_index extends Activity implements OnClickListener {
         btn_loadAnimation.setOnClickListener(this);
         btn_girdview.setOnClickListener(this);
         btn_viewpagerFragment.setOnClickListener(this);
+        btn_touchImageView.setOnClickListener(this);
     }
 
     @Override
@@ -349,7 +353,11 @@ public class activity_index extends Activity implements OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.btn_viewpagerFragment:
-                intent=new Intent(this,activity_viewpagefragment.class);
+                intent = new Intent(this, activity_viewpagefragment.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_touchImageView://ImageTouchView
+                intent = new Intent(this, activity_touchImageView_index.class);
                 startActivity(intent);
                 break;
         }

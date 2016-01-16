@@ -122,6 +122,16 @@
         <activity android:name="com.anyView.activity_loadAnimation" />
         <activity android:name="com.anyView.activity_gridview" />
         <activity android:name="com.anyView.activity_viewpagefragment" />
+        <activity android:name="com.anyView.activity_touchImageView_index"/>
+        <activity android:name="com.touchImageView.touchImageView1.activity_touchimageview1"/>
+        <activity android:name="com.touchImageView.touchImageView2.activity_touchimageview2"/>
+        <activity android:name="com.touchImageView.touchImageView2.MirroringExampleActivity"/>
+        <activity android:name="com.touchImageView.touchImageView2.MyInstanceActivity"/>
+        <activity android:name="com.touchImageView.touchImageView2.NormalImageViewActivity"/>
+        <activity android:name="com.touchImageView.touchImageView2.SingleTouchImageViewActivity"/>
+        <activity android:name="com.touchImageView.touchImageView2.SwitchImageExampleActivity"/>
+        <activity android:name="com.touchImageView.touchImageView2.SwitchScaleTypeExampleActivity"/>
+        <activity android:name="com.touchImageView.touchImageView2.ViewPagerExampleActivity"/>
 
 
         <activity

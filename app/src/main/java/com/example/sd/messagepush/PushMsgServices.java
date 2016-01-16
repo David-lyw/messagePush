@@ -187,7 +187,7 @@ public class PushMsgServices extends Service {
 //        // notification.contentIntent=
 
 
-      /*  Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+      /*  Intent intent = new Intent(getApplicationContext(), activity_touchimageview2.class);
         intent.putExtra("content", content);
         intent.putExtra("content2", content1);
         intent.putExtra("data", date);

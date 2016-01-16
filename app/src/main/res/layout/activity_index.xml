@@ -423,9 +423,21 @@
             <Button
                 android:id="@+id/btn_viewpagerFragment"
                 style="@style/btn_startActivity"
-                android:text="gridview 布局" />
+                android:text="viewpagerFragment" />
         </LinearLayout>
 
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_touchImageView"
+                style="@style/btn_startActivity"
+                android:text="TouchImageView" />
+        </LinearLayout>
 
 
         <View

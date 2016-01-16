@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text=""
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_touchImageView1"
+            style="@style/btn_startActivity"
+            android:text="TouchImageView1" />
+    </LinearLayout>
+    <LinearLayout style="@style/index_llayout">
+
+        <TextView
+            style="@style/tv_w_m_h_w"
+            android:text=""
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_touchImageView2"
+            style="@style/btn_startActivity"
+            android:text="TouchImageView2" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -41,7 +41,7 @@ class MyThread extends Thread {
             System.out.print(buffer);
 //            PushMsgServices.
             Log.i("sun",buffer);
-           // Toast.makeText(MainActivity.class,"buffer",0).show();
+           // Toast.makeText(activity_touchimageview2.class,"buffer",0).show();
 
             //向服务器发送信息
             ou.write("android 客户端".getBytes("utf-8"));

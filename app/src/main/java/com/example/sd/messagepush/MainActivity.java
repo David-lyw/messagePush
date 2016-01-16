@@ -145,7 +145,7 @@ public class MainActivity extends Activity {
         //用户点击消息后，消息自动在通知栏自动消失
         notification.flags = Notification.FLAG_AUTO_CANCEL;
 
-//        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//        Intent intent = new Intent(getApplicationContext(), activity_touchimageview2.class);
 //        intent.putExtra("content", "content");
 //        intent.putExtra("content2", "content2");
 //        intent.putExtra("data", "data");
