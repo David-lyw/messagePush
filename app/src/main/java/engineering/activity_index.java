@@ -104,7 +104,8 @@ public class activity_index extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
 
         //tijiaodaima   隐隐约约
-        // gggggg
+        // gggggg       uuuuuuuuuuuuu
+        //        ttttttttttttttttt
 
         super.onCreate(savedInstanceState);
         //隐藏标题---功能不能实现，代码报错???

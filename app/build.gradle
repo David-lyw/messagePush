@@ -2,12 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '23.0.1'
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.example.sd.messagepush"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.6"
     }
@@ -18,7 +19,7 @@ android {
         }
     }
 
-    useLibrary 'org.apache.http.legacy'
+
 
     productFlavors {
 
