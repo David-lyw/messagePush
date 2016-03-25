@@ -103,6 +103,7 @@ public class activity_index extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        //tijiaodaima
 
         super.onCreate(savedInstanceState);
         //隐藏标题---功能不能实现，代码报错???
