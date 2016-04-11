@@ -199,7 +199,7 @@ public class activity_deviceInfo extends Activity implements OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btn_getInfo:
+            case R.id.btn_getInfo://点击显示所有数据。
                 tv_callState.setText(callState + "");
                 tv_imei.setText(imei);
                 tv_softwareVersion.setText(softwareVersion);

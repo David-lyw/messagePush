@@ -32,19 +32,19 @@ public class activity_fragmenttabhost extends FragmentActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
-                    case R.id.rbtn_mainpage:
+                    case R.id.rbtn_mainpage://主页
                         tabHost.setCurrentTab(0);
                         break;
-                    case R.id.rbtn_about:
+                    case R.id.rbtn_about://关于
                         tabHost.setCurrentTab(1);
                         break;
-                    case R.id.rbtn_setting:
+                    case R.id.rbtn_setting://设置
                         tabHost.setCurrentTab(2);
                         break;
-                    case R.id.rbtn_search:
+                    case R.id.rbtn_search://搜索
                         tabHost.setCurrentTab(3);
                         break;
-                    case R.id.rbtn_more:
+                    case R.id.rbtn_more://更多
                         Toast.makeText(activity_fragmenttabhost.this, "有待开发!",
                                 Toast.LENGTH_LONG).show();
                         break;
