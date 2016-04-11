@@ -14,6 +14,8 @@ import java.util.Iterator;
 
 /**
  * @author sun 2015年10月10日 上午9:58:40
+ * AsyncHttpClient与volley一样是异步网络库，但volley是封装的httpUrlConnection，
+ * 它是封装的httpClient，而android平台不推荐用HttpClient了，所以这个库已经不适合android平台了。
  */
 public class HttpUtils {
     private static AsyncHttpClient client = new AsyncHttpClient(); // 实例话对象
