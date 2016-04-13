@@ -7,7 +7,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.view.View;
@@ -72,16 +75,22 @@ public class activity_viewpagefragment extends FragmentActivity {
     */
     public void InitImage(){
         image = (ImageView)findViewById(R.id.cursor);
-        bmpW = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher).getWidth();
+        bmpW = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher).getWidth();//得到图片的宽。
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
-        int screenW = dm.widthPixels;
-        offset = (screenW/4 - bmpW)/2;
+        int screenW = dm.widthPixels;//屏幕宽度。
+        offset = (screenW/4-bmpW)/2;
 
         //imgageview设置平移，使下划线平移到初始位置（平移一个offset）
         Matrix matrix = new Matrix();
-        matrix.postTranslate(offset, 0);
+        matrix.postTranslate(0, 0);//dx处由offset换成了0.
         image.setImageMatrix(matrix);
+
+        //横屏竖屏都能适应。
+        ViewGroup.MarginLayoutParams margin=new ViewGroup.MarginLayoutParams(image.getLayoutParams());
+        margin.setMargins(offset,0,0,0);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(margin);
+        image.setLayoutParams(layoutParams);
     }
     /*
        * 初始化ViewPager
