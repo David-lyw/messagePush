@@ -1,5 +1,6 @@
 package com.fragmenttabhost;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
@@ -23,6 +24,12 @@ public class activity_fragmenttabhost extends FragmentActivity {
         setContentView(R.layout.activity_fragmenttabhost);
         initTabHost();
         initRadioGroup();
+
+        //设置默认显示指定的fragment，
+        //tabHost.setCurrentTab(3);
+        //此时布局方面做的配合。(只这一种方法就可以实现)
+        radioGroup.check(R.id.rbtn_search);
+
     }
 
     private void initRadioGroup() {
@@ -53,6 +60,7 @@ public class activity_fragmenttabhost extends FragmentActivity {
             }
         });
 
+
     }
 
     private void initTabHost() {
@@ -60,6 +68,7 @@ public class activity_fragmenttabhost extends FragmentActivity {
         // 必须先调用FragmentTabHost的setup()方法
         tabHost.setup(activity_fragmenttabhost.this, getSupportFragmentManager(),
                 R.id.realTabcontent);
+
 
         // 为FragmentTabHost添加标签页
         // 第一个标签页
@@ -79,9 +88,15 @@ public class activity_fragmenttabhost extends FragmentActivity {
         bundle.putString("txt", "FragmentTabHost");
         tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator(view),
                 Fragment3.class, bundle);
+
         // 第四个标签页
         tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("标签4"),
                 Fragment2.class, null);
+
+        //tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("标签4").setContent(new Intent(this,activity_tab_4.class)));
+        //tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("标签4").setContent(new Intent(activity_fragmenttabhost.this,activity_tab_4.class)));
+
+
 
         // FragmentTabHost 的监听器
         tabHost.setOnTabChangedListener(new OnTabChangeListener() {

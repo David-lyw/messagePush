@@ -1,11 +1,13 @@
 package com.fragmenttabhost;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import engineering.R;
@@ -46,6 +48,14 @@ public class Fragment3 extends Fragment {
         TextView tv = (TextView) view.findViewById(R.id.fragment3_tv);
         // tv.setText("从Activity传递过来");
         tv.setText(getText());
+        Button btn_1= (Button) view.findViewById(R.id.btn_1);
+        btn_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),activity_tab_test1.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }
