@@ -438,6 +438,18 @@
                 style="@style/btn_startActivity"
                 android:text="TouchImageView" />
         </LinearLayout>
+        <LinearLayout style="@style/index_llayout">
+
+            <TextView
+                style="@style/tv_w_m_h_w"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_drawabletest"
+                style="@style/btn_startActivity"
+                android:text="drawable总结" />
+        </LinearLayout>
 
 
         <View

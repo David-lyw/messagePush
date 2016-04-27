@@ -19,7 +19,8 @@ public class generalActivity extends Activity implements OnClickListener {
     public static final int DIALOG = 1;
 
 
-    private Handler handler = new Handler() {
+    //目前这种写法有可能内存泄漏，待优化。
+    private  Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {

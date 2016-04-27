@@ -223,5 +223,10 @@
         <item name="android:minHeight">104dip</item>
     </style>
 
+    <style
+        name="Theme.Default.NoActionBar"
+        parent="@android:style/Theme.Holo.Light.NoActionBar" >
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
 
 </resources>

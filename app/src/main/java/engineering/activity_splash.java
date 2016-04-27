@@ -27,7 +27,7 @@ public class activity_splash extends Activity {
                 Intent intent = new Intent(getApplicationContext(), activity_welcom_gif.class);
                 startActivity(intent);
             }
-        }, 500 * 1);
+        }, 1000 * 5);
 
     }
 

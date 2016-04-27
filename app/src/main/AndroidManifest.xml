@@ -51,6 +51,7 @@
             android:name=".activity_splash"
             android:configChanges="orientation|screenSize"
             android:label="lyw"
+            android:theme="@style/Theme.Default.NoActionBar"
             android:launchMode="singleTask">
             <!--android:screenOrientation="landscape"：本activity横屏。portrait：竖屏-->
             <!-- android:configChanges="orientation|keyboardHidden":有效避免oncreat方法的重复加载。换keyboardHidden为screenSize版本13之后-->
@@ -134,6 +135,7 @@
         <activity android:name="com.touchImageView.touchImageView2.SwitchImageExampleActivity"/>
         <activity android:name="com.touchImageView.touchImageView2.SwitchScaleTypeExampleActivity"/>
         <activity android:name="com.touchImageView.touchImageView2.ViewPagerExampleActivity"/>
+        <activity android:name="com.backgrounddrawable.activity_drawabletest1"/>
 
 
 

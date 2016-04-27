@@ -24,6 +24,7 @@ import com.anyView.activity_loadAnimation;
 import com.anyView.activity_showGif;
 import com.anyView.activity_showView;
 import com.anyView.activity_touchImageView_index;
+import com.backgrounddrawable.activity_drawabletest1;
 import com.common.ScreenManager;
 import com.deviceInfromation.activity_deviceInfo;
 import com.dialog.activity_dialog_index;
@@ -91,6 +92,7 @@ public class activity_index extends Activity implements OnClickListener {
     Button btn_girdview;
     Button btn_viewpagerFragment;
     Button btn_touchImageView;
+    Button btn_drawabletest;
 
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
@@ -198,6 +200,7 @@ public class activity_index extends Activity implements OnClickListener {
         btn_girdview = (Button) findViewById(R.id.btn_girdview);
         btn_viewpagerFragment = (Button) findViewById(R.id.btn_viewpagerFragment);
         btn_touchImageView = (Button) findViewById(R.id.btn_touchImageView);
+        btn_drawabletest= (Button) findViewById(R.id.btn_drawabletest);
 
 
     }
@@ -242,6 +245,7 @@ public class activity_index extends Activity implements OnClickListener {
         btn_girdview.setOnClickListener(this);
         btn_viewpagerFragment.setOnClickListener(this);
         btn_touchImageView.setOnClickListener(this);
+        btn_drawabletest.setOnClickListener(this);
     }
 
     @Override
@@ -361,6 +365,10 @@ public class activity_index extends Activity implements OnClickListener {
                 break;
             case R.id.btn_touchImageView://ImageTouchView
                 intent = new Intent(this, activity_touchImageView_index.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_drawabletest:
+                intent = new Intent(this, activity_drawabletest1.class);
                 startActivity(intent);
                 break;
         }
