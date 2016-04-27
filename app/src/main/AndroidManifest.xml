@@ -53,6 +53,7 @@
             android:label="lyw"
             android:theme="@style/Theme.Default.NoActionBar"
             android:launchMode="singleTask">
+            <!--android:theme="@style/Theme.NoBackground"-->
             <!--android:screenOrientation="landscape"：本activity横屏。portrait：竖屏-->
             <!-- android:configChanges="orientation|keyboardHidden":有效避免oncreat方法的重复加载。换keyboardHidden为screenSize版本13之后-->
             <intent-filter>

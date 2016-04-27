@@ -6,7 +6,6 @@
     </style>
 
 
-
     <!--sedin工程 所有activity界面 的标题头所用到的style.................................................-->
     <style name="allinterface_title_rl">
         <item name="android:layout_width">match_parent</item>
@@ -214,7 +213,6 @@
     </style>
 
 
-
     <style name="publicloadingProgressStyle">
         <item name="android:maxWidth">108dip</item>
         <item name="android:maxHeight">104dip</item>
@@ -223,10 +221,12 @@
         <item name="android:minHeight">104dip</item>
     </style>
 
-    <style
-        name="Theme.Default.NoActionBar"
-        parent="@android:style/Theme.Holo.Light.NoActionBar" >
+    <style name="Theme.Default.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+
+    <style name="Theme.NoBackground" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
     </style>
 
 </resources>
