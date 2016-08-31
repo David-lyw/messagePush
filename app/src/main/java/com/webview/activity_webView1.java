@@ -15,11 +15,11 @@ import engineering.R;
 /**
  * Created by sd on 2015/11/16.
  */
-public class activity_webView1 extends Activity implements OnClickListener{
+public class activity_webView1 extends Activity implements OnClickListener {
     WebView webView1;
     Button btn_submit;
     EditText editText;
-     String uri1="http://";
+    String uri1 = "http://";
     RelativeLayout relativeLayout;
 
     @Override
@@ -32,9 +32,9 @@ public class activity_webView1 extends Activity implements OnClickListener{
 
     public void initView() {
         webView1 = (WebView) findViewById(R.id.webView1);
-        btn_submit= (Button) findViewById(R.id.btn_submit);
-        editText= (EditText) findViewById(R.id.edittext);
-        relativeLayout= (RelativeLayout) findViewById(R.id.linearlayou);
+        btn_submit = (Button) findViewById(R.id.btn_submit);
+        editText = (EditText) findViewById(R.id.edittext);
+        relativeLayout = (RelativeLayout) findViewById(R.id.linearlayou);
     }
 
     public void initListener() {
@@ -44,13 +44,12 @@ public class activity_webView1 extends Activity implements OnClickListener{
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.btn_submit:
-                String url="http://119.75.217.109";
-                if (url!=null)
-                {
+                String url = "http://119.75.217.109";
+                if (url != null) {
                     webView1.loadUrl(url);
-                    webView1.setWebViewClient(new WebViewClient(){
+                    webView1.setWebViewClient(new WebViewClient() {
                         @Override
                         public boolean shouldOverrideUrlLoading(WebView view, String url) {
                             view.loadUrl(url);
@@ -58,9 +57,7 @@ public class activity_webView1 extends Activity implements OnClickListener{
                         }
                     });
                 }
-
                 relativeLayout.setVisibility(View.GONE);
-
                 break;
         }
 

@@ -86,9 +86,9 @@ public class activity_sortlistview extends Activity {
             }
         });
 
-        SourceDateList = filledData(getResources().getStringArray(R.array.date));
+        SourceDateList = filledData(getResources().getStringArray(R.array.date));//数据源
 
-        // 根据a-z进行排序源数据
+        // 根据a-z进行排序 源数据
         Collections.sort(SourceDateList, pinyinComparator);
         adapter = new SortAdapter(this, SourceDateList);
         sortListView.setAdapter(adapter);
@@ -124,6 +124,7 @@ public class activity_sortlistview extends Activity {
      * @return
      */
     private List<SortModel> filledData(String [] date){
+
         List<SortModel> mSortList = new ArrayList<SortModel>();
 
         for(int i=0; i<date.length; i++){

@@ -32,6 +32,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="和圆角图片有本质的区别，这种是把图片设置到背景里去" />
+            android:text="重写的drawable。和圆角图片有本质的区别，这种是把图片设置到背景里去" />
     </LinearLayout>
 </ScrollView>

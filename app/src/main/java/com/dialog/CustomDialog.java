@@ -37,7 +37,7 @@ public class CustomDialog {
     private LayoutParams mLayoutParams;
 
 
-//PopupWindow必须有一个ParentView，所以必须添加这个参数
+    //PopupWindow必须有一个ParentView，所以必须添加这个参数
 
     public CustomDialog(Context context, View parent) {
 
@@ -48,7 +48,7 @@ public class CustomDialog {
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 
-//加载布局文件
+      //加载布局文件
 
         mRootLayout = (LinearLayout) mInflater.inflate(R.layout.dialog_logoutaccount, null);
 
@@ -95,7 +95,7 @@ public class CustomDialog {
     }
 
 
-//设置Dailog的“取消”按钮
+    //设置Dailog的“取消”按钮
 
     public void setNegativeButton(String text, OnClickListener listener) {
 
@@ -110,7 +110,7 @@ public class CustomDialog {
     }
 
 
-//替换Dailog的“主体”布局
+    //替换Dailog的“主体”布局
 
     public void setContentLayout(View layout) {
 
@@ -127,7 +127,7 @@ public class CustomDialog {
     }
 
 
-//设置Dailog的长宽
+    //设置Dailog的长宽
 
     public void setLayoutParams(int width, int height) {
 
@@ -138,7 +138,7 @@ public class CustomDialog {
     }
 
 
-//显示Dailog
+    //显示Dailog
 
     public void show() {
 
@@ -157,7 +157,7 @@ public class CustomDialog {
     }
 
 
-//取消Dailog的显示
+    //取消Dailog的显示
 
     public void dismiss() {
 

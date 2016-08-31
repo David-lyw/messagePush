@@ -53,7 +53,7 @@ public class activity_listview_index extends Activity implements OnClickListener
                 intent=new Intent(this,activity_pulltoRefreshListview.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_ListView:
+            case R.id.btn_ListView://完整版listview
                 intent=new Intent(this,activity_sortlistview.class);
                 startActivity(intent);
                 break;
