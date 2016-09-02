@@ -27,7 +27,8 @@ public class activity_fragmenttabhost extends FragmentActivity {
 
         //设置默认显示指定的fragment，
         //tabHost.setCurrentTab(3);
-        //此时布局方面做的配合。(只这一种方法就可以实现)
+
+        //此时布局方面做配合。(只这一种方法就可以实现)
         radioGroup.check(R.id.rbtn_search);
 
     }
@@ -56,11 +57,8 @@ public class activity_fragmenttabhost extends FragmentActivity {
                                 Toast.LENGTH_LONG).show();
                         break;
                 }
-
             }
         });
-
-
     }
 
     private void initTabHost() {

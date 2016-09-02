@@ -241,7 +241,7 @@
             <Button
                 android:id="@+id/btn_fragmenttabhost"
                 style="@style/btn_startActivity"
-                android:text="fragmenttabhost" />
+                android:text="fragmenttabhost:10" />
         </LinearLayout>
 
         <LinearLayout style="@style/index_llayout">

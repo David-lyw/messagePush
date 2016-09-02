@@ -306,7 +306,7 @@ public class activity_index extends Activity implements OnClickListener {
                 intent = new Intent(this, activity_listview_index.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_fragmenttabhost:
+            case R.id.btn_fragmenttabhost: //10
                 intent = new Intent(this, activity_fragmenttabhost.class);
                 startActivity(intent);
                 break;
@@ -359,7 +359,7 @@ public class activity_index extends Activity implements OnClickListener {
                 intent = new Intent(this, activity_gridview.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_viewpagerFragment:
+            case R.id.btn_viewpagerFragment: //viewpagerFragment ：布局上，自己组合成tabhost的样式。
                 intent = new Intent(this, activity_viewpagefragment.class);
                 startActivity(intent);
                 break;
@@ -367,7 +367,7 @@ public class activity_index extends Activity implements OnClickListener {
                 intent = new Intent(this, activity_touchImageView_index.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_drawabletest:
+            case R.id.btn_drawabletest: //圆角图片。
                 intent = new Intent(this, activity_drawabletest1.class);
                 startActivity(intent);
                 break;

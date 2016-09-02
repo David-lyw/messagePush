@@ -21,4 +21,10 @@
         android:layout_height="wrap_content"
         android:text="点我开启一个activity"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="图片为整个布局的背景"/>
+
 </RelativeLayout>

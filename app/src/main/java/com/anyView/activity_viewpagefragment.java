@@ -24,6 +24,8 @@ import engineering.R;
 
 /**
  * Created by sd on 2015/11/25.
+ * FragmentActivity:里面放置的是Fragment。
+ * 布局上，自己组合成底部的样式。
  */
 public class activity_viewpagefragment extends FragmentActivity {
     private ViewPager mPager;
@@ -33,6 +35,7 @@ public class activity_viewpagefragment extends FragmentActivity {
     private int currIndex;//当前页卡编号
     private int bmpW;//横线图片宽度
     private int offset;//图片移动的偏移量
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,14 +45,14 @@ public class activity_viewpagefragment extends FragmentActivity {
         InitViewPager();
     }
 
-    /*
- * 初始化标签名
- */
-    public void InitTextView(){
-        view1 = (TextView)findViewById(R.id.tv_guid1);
-        view2 = (TextView)findViewById(R.id.tv_guid2);
-        view3 = (TextView)findViewById(R.id.tv_guid3);
-        view4 = (TextView)findViewById(R.id.tv_guid4);
+    /**
+     * 初始化标签名
+     */
+    public void InitTextView() {
+        view1 = (TextView) findViewById(R.id.tv_guid1);
+        view2 = (TextView) findViewById(R.id.tv_guid2);
+        view3 = (TextView) findViewById(R.id.tv_guid3);
+        view4 = (TextView) findViewById(R.id.tv_guid4);
 
         view1.setOnClickListener(new txListener(0));
         view2.setOnClickListener(new txListener(1));
@@ -57,12 +60,13 @@ public class activity_viewpagefragment extends FragmentActivity {
         view4.setOnClickListener(new txListener(3));
     }
 
-    public class txListener implements View.OnClickListener{
-        private int index=0;
+    public class txListener implements View.OnClickListener {
+        private int index = 0;
 
         public txListener(int i) {
-            index =i;
+            index = i;
         }
+
         @Override
         public void onClick(View v) {
             // TODO Auto-generated method stub
@@ -70,16 +74,16 @@ public class activity_viewpagefragment extends FragmentActivity {
         }
     }
 
-    /*
-    * 初始化图片的位移像素
-    */
-    public void InitImage(){
-        image = (ImageView)findViewById(R.id.cursor);
+    /**
+     * 初始化图片的位移像素
+     */
+    public void InitImage() {
+        image = (ImageView) findViewById(R.id.cursor);
         bmpW = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher).getWidth();//得到图片的宽。
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int screenW = dm.widthPixels;//屏幕宽度。
-        offset = (screenW/4-bmpW)/2;
+        offset = (screenW / 4 - bmpW) / 2;
 
         //imgageview设置平移，使下划线平移到初始位置（平移一个offset）
         Matrix matrix = new Matrix();
@@ -87,18 +91,19 @@ public class activity_viewpagefragment extends FragmentActivity {
         image.setImageMatrix(matrix);
 
         //横屏竖屏都能适应。
-        ViewGroup.MarginLayoutParams margin=new ViewGroup.MarginLayoutParams(image.getLayoutParams());
-        margin.setMargins(offset,0,0,0);
+        ViewGroup.MarginLayoutParams margin = new ViewGroup.MarginLayoutParams(image.getLayoutParams());
+        margin.setMargins(offset, 0, 0, 0);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(margin);
         image.setLayoutParams(layoutParams);
     }
-    /*
-       * 初始化ViewPager
-       */
-    public void InitViewPager(){
-        mPager = (ViewPager)findViewById(R.id.viewpager);
+
+    /**
+     * 初始化ViewPager
+     */
+    public void InitViewPager() {
+        mPager = (ViewPager) findViewById(R.id.viewpager);
         fragmentList = new ArrayList<Fragment>();
-        Fragment btFragment= new ButtonFragment();
+        Fragment btFragment = new ButtonFragment();
         Fragment secondFragment = TestFragment.newInstance("this is second fragment");
         Fragment thirdFragment = TestFragment.newInstance("this is third fragment");
         Fragment fourthFragment = TestFragment.newInstance("this is fourth fragment");
@@ -115,7 +120,7 @@ public class activity_viewpagefragment extends FragmentActivity {
 
 
     public class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
-        private int one = offset *2 +bmpW;//两个相邻页面的偏移量
+        private int one = offset * 2 + bmpW;//两个相邻页面的偏移量
 
         @Override
         public void onPageScrolled(int arg0, float arg1, int arg2) {
@@ -129,13 +134,13 @@ public class activity_viewpagefragment extends FragmentActivity {
 
         @Override
         public void onPageSelected(int arg0) {
-            Animation animation = new TranslateAnimation(currIndex*one,arg0*one,0,0);//平移动画
+            Animation animation = new TranslateAnimation(currIndex * one, arg0 * one, 0, 0);//平移动画
             currIndex = arg0;
             animation.setFillAfter(true);//动画终止时停留在最后一帧，不然会回到没有执行前的状态
             animation.setDuration(200);//动画持续时间0.2秒
             image.startAnimation(animation);//是用ImageView来显示动画的
             int i = currIndex + 1;
-            Toast.makeText(activity_viewpagefragment.this, "您选择了第"+i+"个页卡", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity_viewpagefragment.this, "您选择了第" + i + "个页卡", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -146,7 +151,6 @@ public class activity_viewpagefragment extends FragmentActivity {
         //getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
 
 
 }
