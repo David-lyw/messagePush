@@ -182,9 +182,7 @@ public class HttpUtils {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        // 使用finally块来关闭输出流、输入流
-        finally {
+        } finally {// 使用finally块来关闭输出流、输入流
             try {
                 if (out != null) {
                     out.close();
