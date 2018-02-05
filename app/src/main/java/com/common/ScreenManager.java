@@ -61,8 +61,9 @@ public class ScreenManager {
     }
 
 
-//将当前Activity推入栈中
-
+    /**
+     * 将当前Activity推入栈中
+     */
     public void pushActivity(Activity activity) {
 
         if (activityStack == null) {
@@ -86,17 +87,12 @@ public class ScreenManager {
             if (activity == null) {
 
                 break;
-
             }
 
             if (activity.getClass().equals(cls)) {
-
                 break;
-
             }
-
             popActivity(activity);
-
         }
 
     }

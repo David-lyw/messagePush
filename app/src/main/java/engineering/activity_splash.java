@@ -21,6 +21,7 @@ public class activity_splash extends Activity {
         setContentView(R.layout.activity_splash);
         screenManager = ScreenManager.getScreenManager();
         screenManager.pushActivity(this);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

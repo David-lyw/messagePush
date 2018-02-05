@@ -15,7 +15,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 public class AppUtils {
 
     private AppUtils() {
-        /* cannot be instantiated */
+        /** cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
 
     }

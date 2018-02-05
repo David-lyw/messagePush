@@ -127,14 +127,13 @@ public class MainActivity extends Activity {
         // notification = new Notification(R.mipmap.ic_launcher, "woshiyigeNotification", System.currentTimeMillis());
         intent = new Intent(getApplicationContext(), MainActivity.class);
         //FLAG_CANCEL_CURRENT作用:notificationId对应的pendingIntent，如果当前系统中已经存在一个相同的PendingIntent对象，那么就将先将已有的PendingIntent取消，然后重新生成一个PendingIntent对象
-        pendingIntent = PendingIntent.getActivity(getApplicationContext(), notificationId, intent,
-                PendingIntent.FLAG_CANCEL_CURRENT);
+        pendingIntent = PendingIntent.getActivity(getApplicationContext(), notificationId, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
         Notification.Builder builder = new Builder(this);
         builder.setContentTitle("标题：爱你" + notificationId)
                 .setContentText("想你 +" + notificationId)
                 .setSmallIcon(R.mipmap.timomengzhu)
-                        //设置可以清除
+                //设置可以清除
                 .setAutoCancel(true)
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.animal_duck))
                 .setContentIntent(pendingIntent);
@@ -163,6 +162,8 @@ public class MainActivity extends Activity {
         // nm.cancel(0);
     }
 
+
+    //清除所有通知
     public void cleanAllNotification(View v) {
         if (nm != null) {
             nm.cancelAll();
@@ -172,6 +173,7 @@ public class MainActivity extends Activity {
     }
 
 
+    //单独向服务器发送消息
     public void sendMessage(View v) {
         // Sorket.getInstance().Send("192.168.1.109",9999);
         new MyThread("192.168.1.109", 9999).start();
@@ -179,6 +181,4 @@ public class MainActivity extends Activity {
         Log.i("view", "输出的内容你在哪里，我找不到你，好心急！！！！！！！！！！！！！！！");
         // Toast.makeText(this,"输出的内容你在哪里",Toast.LENGTH_SHORT).show();
     }
-
-
 }

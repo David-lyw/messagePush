@@ -13,8 +13,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="此界面进行里UI Perfermance 提高,在activity上设置theme"
         android:textColor="#ff0000"
-        android:textSize="18sp"
-        android:text="此界面进行里UI Perfermance 提高"/>
+        android:textSize="18sp" />
 
 </LinearLayout>

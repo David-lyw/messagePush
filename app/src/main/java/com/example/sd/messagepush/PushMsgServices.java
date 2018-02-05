@@ -71,6 +71,9 @@ public class PushMsgServices extends Service {
 
     private final IBinder mBinder = new LocalBinder();
 
+
+
+
     @Override
     public IBinder onBind(Intent intent) {
         IBinder myIBinder = null;
@@ -88,6 +91,7 @@ public class PushMsgServices extends Service {
     public void onCreate() {
         super.onCreate();
 
+        Log.i("lyw", "onCreate");
         initData();
 
         //getNotification(title, content);
@@ -95,11 +99,12 @@ public class PushMsgServices extends Service {
 
     @Override
     public void onStart(Intent intent, int startId) {
+        Log.i("lyw", "onStart");
         super.onStart(intent, startId);
     }
 
 
-    @Override
+    @Override //通过start方式启动service时回调的方法
     public int onStartCommand(Intent intent, int flags, int startId) {
 
         token = sharedPreferences.getString("token", "");
@@ -130,14 +135,18 @@ public class PushMsgServices extends Service {
     }
 
 
+
+
     @Override
     public boolean onUnbind(Intent intent) {
+        Log.i("lyw", "onUnbind");
         return super.onUnbind(intent);
     }
 
 
     @Override
     public void onDestroy() {
+        Log.i("lyw", "onDestroy");
         super.onDestroy();
 
         //服务销毁（即当服务销毁时调用此方法），作用：取消所有通知。
@@ -163,21 +172,20 @@ public class PushMsgServices extends Service {
 
     }
 
-    @SuppressLint("NewApi")
+    @SuppressLint("NewApi") //构建notification
     public void getNotification(String title, String content) {
         //获取系统的通知管理器
         manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         //notification = new Notification(R.mipmap.ic_launcher, content, System.currentTimeMillis());
         intent = new Intent(getApplicationContext(), MainActivity.class);
-        pendingIntent = PendingIntent.getActivity(getApplicationContext(), messageId, intent,
-                PendingIntent.FLAG_CANCEL_CURRENT);
+        pendingIntent = PendingIntent.getActivity(getApplicationContext(), messageId, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
         Notification.Builder builder = new Builder(this);
         builder.setContentTitle(title)
                 .setContentText(content)
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.animal_duck))
                 .setSmallIcon(R.mipmap.ic_launcher)
-                        //0:使用默认设置，如铃声，震动等
+                //0:使用默认设置，如铃声，震动等
                 .setDefaults(Notification.DEFAULT_ALL).setContentIntent(pendingIntent);
         notification = builder.build();
 //        //使用默认设置，如铃声，震动等
@@ -249,6 +257,5 @@ public class PushMsgServices extends Service {
 
         }
     }
-
 
 }
